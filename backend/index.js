@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 5000
 const mongoose = require('mongoose');
-const mongoURI='mongodb+srv://shashankraishetty00:3d2yshashank150803@cluster0.0g4nuco.mongodb.net/foodiomern?retryWrites=true&w=majority&appName=Cluster0'
+const mongoURI='mongodb+srv://<username>:<password>@cluster0.0g4nuco.mongodb.net/foodiomern?retryWrites=true&w=majority&appName=Cluster0'
 
 // Connect to MongoDB Atlas
 
@@ -32,7 +32,7 @@ const mongoURI='mongodb+srv://shashankraishetty00:3d2yshashank150803@cluster0.0g
   })*/
 
   mongoose.connect(
-    "mongodb+srv://shashankraishetty00:3d2yshashank150803@cluster0.0g4nuco.mongodb.net/foodiomern?retryWrites=true&w=majority&appName=Cluster0",
+    "mongodb+srv://<username>:<password>@cluster0.0g4nuco.mongodb.net/foodiomern?retryWrites=true&w=majority&appName=Cluster0",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
